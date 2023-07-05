@@ -21,9 +21,20 @@ import {
 import { useID } from './src/storage';
 import YPartyKitProvider from 'y-partykit/provider';
 import * as Y from 'yjs';
+import { proxy } from 'valtio';
+import { bind } from 'valtio-yjs';
 
 const ydoc = new Y.Doc();
 const provider = new YPartyKitProvider('127.0.0.1:1999', 'my-room', ydoc);
+
+const ymap = ydoc.getMap('mymap');
+
+const state = proxy({
+  text: '',
+  editor: '',
+  reader: '',
+});
+const unbind = bind(state, ymap);
 
 type SectionProps = PropsWithChildren<{
   title: string;

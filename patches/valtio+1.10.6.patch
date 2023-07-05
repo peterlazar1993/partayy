@@ -1,0 +1,32 @@
+diff --git a/node_modules/valtio/package.json b/node_modules/valtio/package.json
+index a3212db..c11a1d6 100644
+--- a/node_modules/valtio/package.json
++++ b/node_modules/valtio/package.json
+@@ -15,27 +15,6 @@
+       ]
+     }
+   },
+-  "exports": {
+-    "./package.json": "./package.json",
+-    ".": {
+-      "types": "./index.d.ts",
+-      "import": {
+-        "types": "./esm/index.d.mts",
+-        "default": "./esm/index.mjs"
+-      },
+-      "module": "./esm/index.js",
+-      "default": "./index.js"
+-    },
+-    "./*": {
+-      "types": "./*.d.ts",
+-      "import": {
+-        "types": "./esm/*.d.mts",
+-        "default": "./esm/*.mjs"
+-      },
+-      "module": "./esm/*.js",
+-      "default": "./*.js"
+-    }
+-  },
+   "files": [
+     "**"
+   ],
