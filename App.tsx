@@ -19,6 +19,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { useID } from './src/storage';
+import YPartyKitProvider from 'y-partykit/provider';
+import * as Y from 'yjs';
+
+const ydoc = new Y.Doc();
+const provider = new YPartyKitProvider('127.0.0.1:1999', 'my-room', ydoc);
 
 type SectionProps = PropsWithChildren<{
   title: string;
