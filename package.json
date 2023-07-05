@@ -10,8 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@craftzdog/react-native-buffer": "^6.0.5",
     "react": "18.2.0",
-    "react-native": "0.72.1"
+    "react-native": "0.72.1",
+    "react-native-quick-base64": "^2.0.6",
+    "react-native-quick-crypto": "^0.6.1",
+    "stream-browserify": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -24,6 +28,7 @@
     "@types/react": "^18.0.24",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
+    "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.76.5",
