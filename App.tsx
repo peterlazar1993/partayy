@@ -1,4 +1,4 @@
-import crypto from 'react-native-quick-crypto';
+import 'react-native-quick-crypto';
 import React from 'react';
 import type { PropsWithChildren } from 'react';
 import {
@@ -18,6 +18,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { useID } from './src/storage';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -50,6 +51,7 @@ function Section({ children, title }: SectionProps): JSX.Element {
 }
 
 function App(): JSX.Element {
+  const [id] = useID();
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -65,7 +67,7 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Text style={styles.highlight}>{crypto.randomUUID()}</Text>
+        <Text style={styles.highlight}>{id}</Text>
         <Header />
         <View
           style={{

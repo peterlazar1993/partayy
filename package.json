@@ -13,6 +13,7 @@
     "@craftzdog/react-native-buffer": "^6.0.5",
     "react": "18.2.0",
     "react-native": "0.72.1",
+    "react-native-mmkv": "^2.10.1",
     "react-native-quick-base64": "^2.0.6",
     "react-native-quick-crypto": "^0.6.1",
     "stream-browserify": "^3.0.0"
