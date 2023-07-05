@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "partykit:serve": "yarn partykit dev server.ts"
   },
   "dependencies": {
     "@craftzdog/react-native-buffer": "^6.0.5",
@@ -20,7 +21,7 @@
     "stream-browserify": "^3.0.0",
     "valtio": "^1.10.6",
     "valtio-yjs": "^0.5.0",
-    "y-partykit": "0.0.0-e7aa4cd",
+    "y-partykit": "0.0.0-3f260d6",
     "yjs": "^13.6.6"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "eslint": "^8.19.0",
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.76.5",
+    "partykit": "0.0.0-3f260d6",
     "patch-package": "^7.0.0",
     "postinstall-postinstall": "^2.1.0",
     "prettier": "3.0.0-alpha.12",
